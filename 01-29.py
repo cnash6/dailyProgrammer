@@ -9,6 +9,8 @@ def do_it(str_in, str_out):
     lens = [alen for alen in range(len(coins))[2:] if eval(str(alen) + outs[-2] + outs[-1])]
 
     print()
+    print(str_in)
+    print(str_out)
     print("Target: " + str(target))
     print("Coins: " + str(coins))
 
@@ -27,9 +29,6 @@ def do_it(str_in, str_out):
         print("No valid combos found")
 
 do_it("Input: 10 5 5 2 2 1", "Output: n <= 3")
-
 do_it("Input: 150 100 50 50 50 50", "Output: n < 5")
-
 do_it("Input: 130 100 20 18 12 5 5", "Output: n < 6")
-
 do_it("Input: 200 50 50 20 20 10", "Output: n >= 5")
